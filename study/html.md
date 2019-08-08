@@ -83,7 +83,12 @@
   <li> 2번 </li>
   <li> 3번 </li>
   </ul>
-`a`: 상대경로, 절대경로, `id`, `mailto`, `_blank`
+`a`: 상대경로, 절대경로
+
+참고링크 : https://electronic-moongchi.tistory.com/87
+<br><a href="python_function.md">function</a>
+
+`id`, `mailto`, `_blank`
 `media`
   - `img`
   - `iframe`

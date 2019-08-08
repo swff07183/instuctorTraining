@@ -32,15 +32,57 @@
 `font-style`
   - `b`, `strong` : 문자열 굵게.  차이? b : 글씨만 굵게. strong : 단락 내 문자 강조. semantic(?) 다른 음성 인식도구에서도 강조해서 읽어줌.
   <b>b 태그 적용</b>
-  - `i`, `em` : 이탤릭체.기울여서 표시
-  i : 글씨만, em : 문자 강조
-  - `del` : 취소선
+  - `i`, `em` : <em>이탤릭체.</em>
+  <br> i : 글씨만, em : 문자 강조
+  - `del` : 취소선 <del> 취소선 </del>
 
 
 
 `list`
-  - `ol` + `li`
-  - `ul` + `li`
+
+
+  - `ol` + `li` : ordered list. 숫자나 알파벳 등 순서가 있는 목록
+  
+  `<li>` : list item
+  ```
+  <ol>
+  <li> 1번 </li>
+  <li> 2번 </li>
+  <li> 3번 </li>
+  </ol>
+  ```
+  <ol>
+  <li> 1번 </li>
+  <li> 2번 </li>
+  <li> 3번 </li>
+  </ol>
+  
+  <ol type = "I">
+  <li> 1번 </li>
+  <li> 2번 </li>
+  <li> 3번 </li>
+  </ol>
+  
+  <ol start="3">
+  <li> 1번 </li>
+  <li> 2번 </li>
+  <li> 3번 </li>
+  </ol>
+  
+  - `ul` + `li` : unordered list. 순서가 필요없는 항목
+  
+  ```
+  <ul>
+  <li> 1번 </li>
+  <li> 2번 </li>
+  <li> 3번 </li>
+  </ul>
+  ```
+  <ul>
+  <li> 1번 </li>
+  <li> 2번 </li>
+  <li> 3번 </li>
+  </ul>
 `a`: 상대경로, 절대경로, `id`, `mailto`, `_blank`
 `media`
   - `img`

@@ -9,17 +9,17 @@
   - `article`
   - `footer`
 
-
+```
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>HAEDAL</title>
+    <title>haedal</title>
     <style type="text/css">
     body{width:440px;}
     header, nav, section, article, aside, footer{display:block; width:400px; margin:4px; padding:4px; background-color:#dbdbdb; text-align:center; border-radius: 5px}
     section{float:left; width:280px; height:200px;}
     article{width:264px; background-color:#efefef; height:164px; line-height: 164px; border-radius: 5px}
-    aside{float:left; width:104px; height:200px;}
+    aside{float:left; width:104px; height:200px; line-height: 200px}
     footer{overflow:hidden;}
     </style>
 </head>
@@ -34,8 +34,8 @@
 <footer>footer</footer>
 </body>
 </html>
-
-
+```
+![1](./image/Semantic_tag.PNG)
 
 `non-Semantic Tag`
   - `div`

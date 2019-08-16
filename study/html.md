@@ -10,6 +10,30 @@
   - `footer`
 
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>HAEDAL</title>
+    <style type="text/css">
+    body{width:440px;}
+    header, nav, section, article, aside, footer{display:block; width:400px; margin:4px; padding:4px; background-color:#dbdbdb; text-align:center; border-radius: 5px}
+    section{float:left; width:280px; height:200px;}
+    article{width:264px; background-color:#efefef; height:164px; line-height: 164px; border-radius: 5px}
+    aside{float:left; width:104px; height:200px;}
+    footer{overflow:hidden;}
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <section>
+    section
+        <article>article</article>
+    </section>
+<aside>aside</aside>
+<footer>footer</footer>
+</body>
+</html>
 
 
 
@@ -37,6 +61,7 @@
 <h6>This is heading 6</h6>
 
 
+<br>
 
 `paragraph`
   - `br` : 줄바꿈

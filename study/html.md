@@ -200,7 +200,23 @@ Semantic 태그는 개발자와 브라우저에게 의미가 있는 태그를 �
 
 
 
-`id`, `mailto`, `_blank`
+`id` : 같은 문서 내의 엘리먼트 ID
+
+```
+<div id="haedal">haedal</div>
+<a href="#haedal">haedal로 이동하기</a>
+```
+
+<div id="haedal">haedal</div>
+<a href="#haedal">haedal로 이동하기</a>
+ 
+ 
+ `mailto` 
+ <a href="mailto:swff07183@naver.com">mailto</a>
+  
+  `_blank` : 링크를 새 창으로 연다.
+  <a href="http://naver.com" target="_blank">네이버를 새창으로 열기</a>
+  
 `media`
   - `img`
   - `iframe`

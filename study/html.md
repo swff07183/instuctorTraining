@@ -211,9 +211,12 @@ Semantic 태그는 개발자와 브라우저에게 의미가 있는 태그를 �
 <a href="#haedal">haedal로 이동하기</a>
  
  
- `mailto` 
- <a href="mailto:swff07183@naver.com">mailto</a>
-  
+ 
+ `mailto` :  해당 주소로 메일 보내기
+ 
+ ```
+ <a href="mailto:swff07183@naver.com">mailtn:swff07183@naver.com</a>
+```
   `_blank` : 링크를 새 창으로 연다.
   <a href="http://naver.com" target="_blank">네이버를 새창으로 열기</a>
   

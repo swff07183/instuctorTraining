@@ -9,6 +9,31 @@
   - `article`
   - `footer`
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>시맨틱 구조</title>
+    <style type="text/css">
+    body{width:440px;}
+    header, nav, section, article, aside, footer{display:block; width:400px; margin:4px; padding:4px; background-color:#ddd; text-align:center;}
+    section{float:left; width:280px; height:60px;}
+    article{width:264px; background-color:#efefef;}
+    aside{float:left; width:104px; height:60px;}
+    footer{overflow:hidden;}
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <section>
+    section
+        <article>article</article>
+    </section>
+<aside>aside</aside>
+<footer>footer</footer>
+</body>
+</html>
+
 
 
 `non-Semantic Tag`
@@ -17,6 +42,22 @@
 
 
 `heading`
+
+```
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+```
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
 
 
 
@@ -30,11 +71,29 @@
 
 
 `font-style`
-  - `b`, `strong` : 문자열 굵게.  차이? b : 글씨만 굵게. strong : 단락 내 문자 강조. semantic(?) 다른 음성 인식도구에서도 강조해서 읽어줌.
-  <b>b 태그 적용</b>
-  - `i`, `em` : <em>이탤릭체.</em>
-  <br> i : 글씨만, em : 문자 강조
-  - `del` : 취소선 <del> 취소선 </del>
+  - `b`, `strong` : 문자열을 굵게 강조하는 태그.
+  
+    <b>b 태그 적용</b>
+  <br>
+    <strong> strong 태그 적용 </strong>
+    
+    두 태그의 차이가 보이시나요? 사실상 눈에 보이는 차이는 없습니다.
+    하지만 
+    
+    차이? b : 글씨만 굵게.
+    strong : 단락 내 문자 강조. semantic(?) 다른 음성 인식도구에서도 강조해서 읽어줌.
+  
+  
+  - `i`, `em` :
+  
+    <i>i 태그 적용</i>
+    <br>
+    <em>em 태그 적용</em>
+    
+    `<i>` 태그와 `<em>` 태그의 차이는 `<b>` 태그와 `<strong>` 태그의 차이와 같습니다.
+    <br> i : 글씨만, em : 문자 강조
+  - `del` : 취소선을 표시하는 태그.
+   <br><del> del 태그 적용 </del>
 
 
 
@@ -46,9 +105,9 @@
   `<li>` : list item
   ```
   <ol>
-  <li> 1번 </li>
-  <li> 2번 </li>
-  <li> 3번 </li>
+      <li> 1번 </li>
+      <li> 2번 </li>
+      <li> 3번 </li>
   </ol>
   ```
   <ol>
@@ -57,11 +116,26 @@
   <li> 3번 </li>
   </ol>
   
+  ```
+  <ol type = "I">
+      <li> 1번 </li>
+      <li> 2번 </li>
+      <li> 3번 </li>
+  </ol>
+  ```
   <ol type = "I">
   <li> 1번 </li>
   <li> 2번 </li>
   <li> 3번 </li>
   </ol>
+  
+  ```
+  <ol start="3">
+      <li> 1번 </li>
+      <li> 2번 </li>
+      <li> 3번 </li>
+  </ol>
+  ```
   
   <ol start="3">
   <li> 1번 </li>
@@ -73,9 +147,9 @@
   
   ```
   <ul>
-  <li> 1번 </li>
-  <li> 2번 </li>
-  <li> 3번 </li>
+      <li> 1번 </li>
+      <li> 2번 </li>
+      <li> 3번 </li>
   </ul>
   ```
   <ul>
@@ -86,7 +160,10 @@
 `a`: 상대경로, 절대경로
 
 참고링크 : https://electronic-moongchi.tistory.com/87
-<br><a href="python_function.md">function</a>
+
+`<a href="python_function.md">python_function</a>`
+<br><a href="python_function.md" title="title 속성">python_function</a>
+
 
 `id`, `mailto`, `_blank`
 `media`
